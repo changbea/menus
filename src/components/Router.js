@@ -22,7 +22,7 @@ const AppRouter = ({ isLoggedIn, userObj }) => {
             </Route>
           ) : (
             <Route>
-              <Route exact path="/menus" Component={Auth} />
+              <Route exact path="/" Component={Auth} />
             </Route>
           )
         }

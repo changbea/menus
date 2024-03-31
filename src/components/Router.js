@@ -4,13 +4,15 @@ import Auth from "routes/Auth";
 import Home from "routes/Home";
 import Profile from "routes/Profile";
 import Navigation from "components/Navigation";
+import Menus from '../menus';
 
 const AppRouter = ({ isLoggedIn, userObj }) => {
   // const [isLoggedIn, setIsLoggedIn] = useState(false);
   
   return (
     <BrowserRouter>
-      {isLoggedIn && <Navigation userObj={userObj} />}
+    <Menus isLoggedIn={isLoggedIn} userObj={userObj}/>
+      {/* {isLoggedIn && <Navigation userObj={userObj} />} */}
       <Routes>
         {
           isLoggedIn ? (

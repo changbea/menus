@@ -60,17 +60,16 @@ const Profile = ({ userObj }) => {
 
     return (
         <div className='container'>
-            <span>Profile:</span>
             <form className='profileForm' onSubmit={onSubmit} >
-                <input className='formInput' type='text' placeholder='display name' onChange={onChange} value={newDisplayName} />
+                <input className='formInput' type='text' placeholder='Profile: display name' onChange={onChange} value={newDisplayName} />
                 <div className='formMargin'></div>
                 <input className='formBtn' type='submit' value='update profile' />
             </form>
             <div className='logout'></div>
             <div className='formBtn cancelBtn'>
-                <Link to='/' onClick={onLogOutClick}>Logout</Link>
+                <Link to='/' onClick={onLogOutClick}>Delete</Link>
             </div>
-            <div className='formMargin'></div>
+            <div className='formMargin'>My Messages</div>
             <div>
                 {myNweets.map((nweet) => {
                     return(

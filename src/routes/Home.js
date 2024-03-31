@@ -118,6 +118,12 @@ const Home = ({ userObj }) => {
                     </div>
                 )}
             </form>
+            <form className='factoryForm' onSubmit={onSubmit}>
+                <div className='factoryContainer'>
+                    <input className='factoryInput' type='text' placeholder="What's on your mind" value={nweet} onChange={onChange} maxLength={120} />
+                    <input className='factoryArrow' type='submit' value='Nweet' />
+                </div>
+            </form>
             <div>
                 {nweets.map((nweet) => {
                     return(

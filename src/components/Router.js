@@ -13,6 +13,7 @@ const AppRouter = ({ isLoggedIn, userObj }) => {
     <BrowserRouter>
     <Menus isLoggedIn={isLoggedIn} userObj={userObj}/>
       {/* {isLoggedIn && <Navigation userObj={userObj} />} */}
+      
       <Routes>
         {
           isLoggedIn ? (
